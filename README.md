@@ -14,7 +14,7 @@ This project implements a modular, finite state machine (FSM)-based digital stop
 
 The stopwatch FSM logic is illustrated below:
 
-[image:1]
+![FSM State Diagram](img/statediagram.jpg)
 
 **States & Transitions:**
 - `IDLE` (reset state): Waits for start command.
@@ -27,27 +27,15 @@ The stopwatch FSM logic is illustrated below:
 
 digital_stopwatch/
 │
+├── README.md
 ├── src/
-│ ├── stopwatch_fsm.v
-│ ├── sync_counter.v
-│ └── stopwatch_top.v
+│   ├── stopwatch_fsm.v
+│   ├── sync_counter.v
+│   └── stopwatch_top.v
 ├── tb/
-│ └── stopwatch_tb.sv
-├── constraints/
-│ └── stopwatch.ucf // Example (FPGA pin mappings)
-└── doc/
-└── fsm_diagram.png // Provided above
-
-## Getting Started
-
-1. **Simulate:**  
-   Use `iverilog`, Vivado, or your preferred simulator with the testbench in `/tb`.
-
-2. **Synthesize on FPGA:**  
-   Import sources from `/src` and constraints from `/constraints` into Xilinx ISE or Vivado. Adjust for your specific Spartan-5 board pins as needed.
-
-3. **Test and Extend:**  
-   Wire inputs to pushbuttons/switches and outputs to 7-segment or LED display logic of your choice.
+│   └── stopwatch_tb.sv
+└── img/
+    └── statediagram.jpg
 
 ---
 
