@@ -1,4 +1,4 @@
-# FPGA Digital Stopwatch ⏱️
+# Verilog-Based Digital Stopwatch ⏱️
 
 This project implements a modular, finite state machine (FSM)-based digital stopwatch in Verilog for FPGA development boards (e.g., Xilinx Spartan-5).
 
@@ -7,8 +7,7 @@ This project implements a modular, finite state machine (FSM)-based digital stop
 - **FSM-based core:** Explicit control states for Start, Pause, and Reset.
 - **Modular design:** Separate FSM and synchronous counter modules.
 - **Parametric counters:** Easily extend seconds/minutes range.
-- **Simulation ready:** Comprehensive SystemVerilog testbench.
-- **FPGA ready:** Synthesizable for popular Xilinx boards.
+- **Simulation ready:** Comprehensive Verilog testbench with 20+ testcases.
 
 ## State Diagram
 
