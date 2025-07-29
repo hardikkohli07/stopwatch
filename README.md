@@ -14,7 +14,7 @@ This project implements a modular, finite state machine (FSM)-based digital stop
 
 The stopwatch FSM logic is illustrated below:
 
-![FSM State Diagram](img/statediagram.jpg)
+![FSM State Diagram](img/statediagram.png)
 
 **States & Transitions:**
 - `IDLE` (reset state): Waits for start command.
@@ -25,7 +25,7 @@ The stopwatch FSM logic is illustrated below:
 
 ## Directory Structure
 
-digital_stopwatch/
+```digital_stopwatch/
 │
 ├── README.md
 ├── src/
@@ -35,7 +35,7 @@ digital_stopwatch/
 ├── tb/
 │   └── stopwatch_tb.sv
 └── img/
-    └── statediagram.jpg
+    └── statediagram.jpg```
 
 ---
 
